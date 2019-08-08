@@ -260,7 +260,7 @@ void cursor(char choise)
 
 }
 
-int CheckForZeroBeforeMove(int q,int w)//re-checking whether the the space is blank or not;before evaluating
+int CheckForZeroBeforeMove(int q,int w)//re-checking whether the the space is blank or not;before shifting
 {
      if(arr[q][w]==0)
       {
