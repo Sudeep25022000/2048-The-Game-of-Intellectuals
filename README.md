@@ -18,4 +18,19 @@ A submit of minor project to Codex(S'o'A University).
    - 'S'   Down
    - 'W'   Up
 # Screenshots:
-   - Type 'S' ![Screenshot1](https://user-images.githubusercontent.com/53346605/62846337-2f661100-bced-11e9-8865-5c183033bb1b.png)
+   - Type 'S' for downward movent. 
+   ![Screenshot1](https://user-images.githubusercontent.com/53346605/62846337-2f661100-bced-11e9-8865-5c183033bb1b.png)
+   - Observe the downward movemnt. 
+   ![Screenshot2](https://user-images.githubusercontent.com/53346605/62846398-a9969580-bced-11e9-9570-0cc0824c2d16.png)
+   - Type 'A' for leftward movement.
+   ![Screenshot3](https://user-images.githubusercontent.com/53346605/62846495-38a3ad80-bcee-11e9-9c96-10557f8a3ec9.png)
+   - Observe the leftward movement.
+   ![Screenshot4](https://user-images.githubusercontent.com/53346605/62846499-49542380-bcee-11e9-9a9c-d8086a7c1559.png)
+   - Type 'D' for righttward movent.
+   ![Screenshot5](https://user-images.githubusercontent.com/53346605/62846510-55d87c00-bcee-11e9-9c9f-623c93e3a046.png)
+   - Observe the rightward movement.
+   ![Screenshot6](https://user-images.githubusercontent.com/53346605/62846522-6ab50f80-bcee-11e9-91eb-1df9591c1446.png)
+   - Type 'W' for upward movement.
+   ![Screenshot7](https://user-images.githubusercontent.com/53346605/62846526-76083b00-bcee-11e9-8d37-da4d3fb49b18.png)
+   -Observe the upward movement.
+   ![Screenshot8](https://user-images.githubusercontent.com/53346605/62846529-80c2d000-bcee-11e9-8459-ae3c3dcc8093.png)
