@@ -28,6 +28,7 @@ int main()
 
  char choice;//Selecting the cursor movement...'w','s','a','d'.
 
+
  while(checkblankblock())//checking whether the condition is true or false
  {
   printf("\n=====================================================2048 Game==========================================================");
