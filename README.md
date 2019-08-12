@@ -17,4 +17,5 @@ A submit of minor project to Codex(S'o'A University).
    - 'D'   Right
    - 'S'   Down
    - 'W'   Up
-# Screenshots:   
+# Screenshots:
+   - Type 'S' ![Screenshot1](https://user-images.githubusercontent.com/53346605/62846337-2f661100-bced-11e9-8865-5c183033bb1b.png)
