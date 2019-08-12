@@ -27,23 +27,27 @@ int main()
     }
 
  char choice;//Selecting the cursor movement...'w','s','a','d'.
- printf("\n=====================================================2048 Game==========================================================");
- printf("\t\t\t\t\t\t\t\t\t\t\t\t\t Sudeep Swain");
- printf("\n\t\t\t\t\t\tSlno  Movements  Keys");
- printf("\n\t\t\t\t\t\t 1.    Upward:    W");
- printf("\n\t\t\t\t\t\t 2.    Downward:  S");
- printf("\n\t\t\t\t\t\t 3.    Left:      A");
- printf("\n\t\t\t\t\t\t 4.    Right:     D");
 
  while(checkblankblock())//checking whether the condition is true or false
  {
+  printf("\n=====================================================2048 Game==========================================================");
+  printf("\t\t\t\t\t\t\t\t\t\t\t\t\t Sudeep Swain");
+  printf("\n\t\t\t\t\t\tSlno  Movements  Keys");
+  printf("\n\t\t\t\t\t\t 1.    Upward:    W");
+  printf("\n\t\t\t\t\t\t 2.    Downward:  S");
+  printf("\n\t\t\t\t\t\t 3.    Left:      A");
+  printf("\n\t\t\t\t\t\t 4.    Right:     D");
   fillthespace_countscore();//accessing the fillthespace_countscore function,fills the blank space with a random of 2 or 4 and increments the score
   display();//accessing the display function, displays the result after the move and the score
   printf("\n\t\t\t\t\t\t\t\t\t\t\tPress the key for a move:");
   scanf("%c",&choice);//inputting the choice
   fflush(stdin);//clear the buffer
   if(choice=='d'||choice=='D'||choice=='a'||choice=='A'||choice=='w'||choice=='W'||choice=='s'||choice=='S')
-  cursor(choice);//accessing the cursor function with tallying the input choice
+  {
+    cursor(choice);//accessing the cursor function with tallying the input choice
+    system("cls");
+  }
+
   else
    {
         printf("\n\t\t\t\t\t\t***INVALID MOVE!!!***");
@@ -260,7 +264,7 @@ void cursor(char choise)
 
 }
 
-int CheckForZeroBeforeMove(int q,int w)//re-checking whether the the space is blank or not;before shifting
+int CheckForZeroBeforeMove(int q,int w)//re-checking whether the the space is blank or not;before evaluating
 {
      if(arr[q][w]==0)
       {
