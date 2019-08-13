@@ -6,7 +6,7 @@ A submit of minor project to Codex(S'o'A University).
    - Cursor movement in all the 4 direction.
 # Rules:  
    - There will be a 4X4 matrix board given.
-   - Use the cursor alloted keys to move up,down,left,right.
+   - Use the alloted cursor keys to move up,down,left,right.
    - The same numbers only get added to each other.
    - With each movement we get a randon number(whether 2 or 4) at a random place.
    - Try proceeding the same movement to get a 2048 number.
