@@ -12,6 +12,7 @@ int score2=0;//displays the final score after each round
 int flag2=1;//condition to check whether the game has been started or not ie if flag==1 game not started and if flag==0 game has been started.
 void fillthespace_countscore();//fills the blank space with a random of 2 or 4 and increments the score
 int CheckForZeroBeforeMove();//checking before pressing any cursor key
+char wannacontinue;
 
 //main function starts**************************************************************************************************************************
 int main()
@@ -60,7 +61,7 @@ int main()
 
  }
  printf("\n\n\t\t\t\t\t\tSorry! No moves anymore. ");
- printf("\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tFinal score:%d",score2);//when the condition goes false, it displays the final score
+ printf("\n\n\t\t\t\t\t\t\t\t\t\tFinal score:%d",score2);//when the condition goes false, it displays the final score
  getch();
 
 }
@@ -116,7 +117,7 @@ void fillthespace_countscore()
              score2=10*temp+score2;//counting the score to be displayed
          }
 
-     do
+    do
      {
           i=rand()%4;//for the random row
           j=rand()%4;//for the random column
@@ -262,6 +263,24 @@ void cursor(char choise)
           }
 
      }
+        if(flag2==0 && arr[i][j]==2048)//If the slab already have a 2048, it would ask the user whether to continue or not.
+         {
+             printf("\n\n\t\t\t\tYou have got a 2048 slab.Do you still want to continue");
+             printf("\n\t\t\t\t\tPress 'y' to continue or 'n' to quit.");
+             fflush(stdin);
+             scanf("%c",&wannacontinue);
+         }
+
+         if(wannacontinue=='y' || wannacontinue=='Y')//On pressing y the program will continue executing.
+         {
+             main();
+         }
+
+         else if(wannacontinue=='n' || wannacontinue=='N')//On pressing n the program will terminate.
+         {
+             printf("\n\t\t\t\t\t\t\t\t\t\tFinal Score=%d",score2);
+             exit(0);
+         }
 
 }
 
@@ -286,7 +305,7 @@ void display()
   int k=0;
   printf("\n\t\t\t\t\t\t\t\t\t\t\tScore=%d",score2);
   printf("\n\n");
-  printf("\t\t\t\t\t\t -----------------");
+  printf("\t\t\t\t\t\t ----------------------------------");
   for(i=0;i<=3;i++)
    {
       printf("\n");
@@ -296,12 +315,12 @@ void display()
       {
            if(arr[i][j]==0)
            {
-             printf("  |");
+             printf("\t  |");
            }
 
            else
            {
-               printf("%d |",arr[i][j]);
+               printf("%d\t |",arr[i][j]);
            }
 
            printf(" ");
@@ -311,7 +330,7 @@ void display()
       if(i<=3)
       {
           printf("\n");
-          printf("\t\t\t\t\t\t -----------------");
+          printf("\t\t\t\t\t\t ----------------------------------");
       }
 
    }
