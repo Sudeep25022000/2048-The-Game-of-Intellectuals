@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<curses.h>
+#include<conio.h>
 #include<string.h>
 #include<math.h>
 #include<stdlib.h>
@@ -56,7 +56,7 @@ int main()
         printf("\n\n\t\t\t\t\t     \"Sorry! No moves anymore.\"");
         printf("\n\n\t\t\t\t\t     \"Need to Restart the Game.\"\n");
         printf("\n\n\t\t\t\t\t\t                                        Final score:%d\n\n",score2);//when the condition goes false, it displays the final score
-        return 0;
+        return;
    }
 
  }
