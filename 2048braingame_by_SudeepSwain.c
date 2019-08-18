@@ -15,7 +15,7 @@ int CheckForZeroBeforeMove();//checking before pressing any cursor key
 char wannacontinue;
 
 //main function starts**************************************************************************************************************************
-int main()
+int main(void)
 {
     int i;
     int j;
@@ -27,7 +27,7 @@ int main()
         }
     }
 
- char choice;//Selecting the cursor movement...'w','s','a','d'.
+ //char choice;//Selecting the cursor movement...'w','s','a','d'.
 
 
  while(checkblankblock())//checking whether the condition is true or false
@@ -42,7 +42,11 @@ int main()
   fillthespace_countscore();//accessing the fillthespace_countscore function,fills the blank space with a random of 2 or 4 and increments the score
   display();//accessing the display function, displays the result after the move and the score
   printf("\n\t\t\t\t\t\t\t\t\t\t\tPress the key for a move:");
-  scanf("%c",&choice);//inputting the choice
+
+  char choice;
+  choice=getche();
+
+  //scanf("%c",&choice);//inputting the choice
   fflush(stdin);//clear the buffer
   if(choice=='d'||choice=='D'||choice=='a'||choice=='A'||choice=='w'||choice=='W'||choice=='s'||choice=='S')
   {
