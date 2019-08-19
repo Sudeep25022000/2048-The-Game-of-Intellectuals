@@ -187,7 +187,7 @@ void cursor(char choise)
                      arr[i][j]=0;
 
                     }
-                    temp=arr[i,j];
+                    temp=arr[i][j];
 
                }
                for(j=1;j<=3;j++)
