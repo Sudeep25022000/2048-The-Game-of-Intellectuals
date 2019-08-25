@@ -41,4 +41,4 @@ A submit of minor project to Codex(S'o'A University).
    
                                                     OR
 
-   - [Click this] (https://github.com/Sudeep25022000/2048-The-Game-of-Intellectuals/releases)
+      - [Click this](https://github.com/Sudeep25022000/2048-The-Game-of-Intellectuals/releases)
