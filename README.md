@@ -35,4 +35,7 @@ A submit of minor project to Codex(S'o'A University).
    -Observe the upward movement.
    ![Screenshot8](https://user-images.githubusercontent.com/53346605/62846529-80c2d000-bcee-11e9-8459-ae3c3dcc8093.png)
 # Way to Download
-   - "Release" >> Choose the medium of download.
+   - "release" >> Choose the medium of download(developer's recommended .zip).
+   ![release2](https://user-images.githubusercontent.com/53346605/63649505-197c3580-c75c-11e9-83a8-52fa586d8c12.png)
+   ![release](https://user-images.githubusercontent.com/53346605/63649518-3ca6e500-c75c-11e9-9d2a-0cfb6bbe0f0c.png)
+
