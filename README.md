@@ -1,3 +1,4 @@
+![1200x630wa](https://user-images.githubusercontent.com/53346605/63649166-e89a0180-c757-11e9-9cfa-be73d80e8a87.png)
 # 2048-The Game of Intellectuals.
 A submit of minor project to Codex(S'o'A University).
  # Overview:
