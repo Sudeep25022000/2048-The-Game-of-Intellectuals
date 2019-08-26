@@ -45,8 +45,6 @@ int main(void)
 
   char choice;
   choice=getche();
-
-  //scanf("%c",&choice);//inputting the choice
   fflush(stdin);//clear the buffer
   if(choice=='d'||choice=='D'||choice=='a'||choice=='A'||choice=='w'||choice=='W'||choice=='s'||choice=='S')
   {
@@ -141,150 +139,157 @@ void cursor(char choise)
      int temp;
      int x;
      int y;
-
-     if(choise=='d'|| choise=='D')//row increases and column pointer moves from right to left in decreasing order
+     switch(choise)
      {
-          for(i=0;i<=3;i++)
-          {
-            temp=arr[i][3];
-           for(j=2;j>=0;j--)//checking and addition of same number loop
-            {
-                if(arr[i][j]==temp)
+         case 'd':
+         case 'D'://row increases and column pointer moves from right to left in decreasing order
+         {
+              for(i=0;i<=3;i++)
+              {
+                temp=arr[i][3];
+               for(j=2;j>=0;j--)//checking and addition of same number loop
                 {
-                   arr[i][j+1]=2*temp;
-                   arr[i][j]=0;
-                }
-
-             temp=arr[i][j];
-
-           }
-           for(j=2;j>=0;j--)
-            {
-                k=j;
-                while(CheckForZeroBeforeMove(i,k+1)&&(k+1)<=3)//shifting the numbers if the space is blank loop
-                {
-                 arr[i][k+1]=arr[i][k];
-                 arr[i][k]=0;
-                 k++;
-                }
-            }
-        }
-
-     }
-
-
-
-     else if(choise=='a' || choise=='A')//row increases and column pointer moves from left to right in decreasing order
-     {
-          for(i=0;i<=3;i++)
-          {
-               temp=arr[i][0];
-               for(j=1;j<=3;j++)
-               {
                     if(arr[i][j]==temp)
                     {
-                     arr[i][j-1]=2*temp;
-                     arr[i][j]=0;
-
+                       arr[i][j+1]=2*temp;
+                       arr[i][j]=0;
                     }
-                    temp=arr[i][j];
+
+                 temp=arr[i][j];
 
                }
-               for(j=1;j<=3;j++)
-               {
+               for(j=2;j>=0;j--)
+                {
                     k=j;
-                    while(CheckForZeroBeforeMove(i,k-1)&&(k-1)>=0)
+                    while(CheckForZeroBeforeMove(i,k+1)&&(k+1)<=3)//shifting the numbers if the space is blank loop
                     {
-                         arr[i][k-1]=arr[i][k];
-                         arr[i][k]=0;
-                         k--;
-                    }
-                }
-          }
-     }
-
-
-
-     else if(choise=='w' || choise=='W')
-     {
-          for(j=0;j<=3;j++)
-          {
-               temp=arr[0][j];
-               for(i=1;i<=3;i++)
-               {
-                    if(arr[i][j]==temp)
-                    {
-                     arr[i-1][j]=2*temp;
-                     arr[i][j]=0;
-
-                    }
-                   temp=arr[i][j];
-               }
-               for(i=1;i<=3;i++)
-               {
-                    k=i;
-                    while(CheckForZeroBeforeMove(k-1,j)&&(k-1)>=0)
-                    {
-                     arr[k-1][j]=arr[k][j];
-                     arr[k][j]=0;
-                     k--;
-                    }
-               }
-
-          }
-     }
-
-
-
-     else if(choise=='s' || choise=='S')
-     {
-        for(j=0;j<=3;j++)
-          {
-               temp=arr[3][j];
-               for(i=2;i>=0;i--)
-               {
-                    if(arr[i][j]==temp)
-                    {
-                     arr[i+1][j]=2*temp;
-                     arr[i][j]=0;
-
-                    }
-
-                     temp=arr[i][j];
-
-               }
-               for(i=2;i>=0;i--)
-               {
-                    k=i;
-                    while(CheckForZeroBeforeMove(k+1,j)&&(k+1)<=3)
-                    {
-                     arr[k+1][j]=arr[k][j];
-                     arr[k][j]=0;
+                     arr[i][k+1]=arr[i][k];
+                     arr[i][k]=0;
                      k++;
                     }
-               }
+                }
+            }
 
-          }
+         }
 
+
+
+         case 'a':
+         case 'A':
+         {
+              for(i=0;i<=3;i++)
+              {
+                   temp=arr[i][0];
+                   for(j=1;j<=3;j++)
+                   {
+                        if(arr[i][j]==temp)
+                        {
+                         arr[i][j-1]=2*temp;
+                         arr[i][j]=0;
+
+                        }
+                        temp=arr[i][j];
+
+                   }
+                   for(j=1;j<=3;j++)
+                   {
+                        k=j;
+                        while(CheckForZeroBeforeMove(i,k-1)&&(k-1)>=0)
+                        {
+                             arr[i][k-1]=arr[i][k];
+                             arr[i][k]=0;
+                             k--;
+                        }
+                    }
+              }
+         }
+
+
+
+         case 'w':
+         case 'W':
+         {
+              for(j=0;j<=3;j++)
+              {
+                   temp=arr[0][j];
+                   for(i=1;i<=3;i++)
+                   {
+                        if(arr[i][j]==temp)
+                        {
+                         arr[i-1][j]=2*temp;
+                         arr[i][j]=0;
+
+                        }
+                       temp=arr[i][j];
+                   }
+                   for(i=1;i<=3;i++)
+                   {
+                        k=i;
+                        while(CheckForZeroBeforeMove(k-1,j)&&(k-1)>=0)
+                        {
+                         arr[k-1][j]=arr[k][j];
+                         arr[k][j]=0;
+                         k--;
+                        }
+                   }
+
+              }
+         }
+
+
+
+         case 's':
+         case 'S':
+         {
+            for(j=0;j<=3;j++)
+              {
+                   temp=arr[3][j];
+                   for(i=2;i>=0;i--)
+                   {
+                        if(arr[i][j]==temp)
+                        {
+                         arr[i+1][j]=2*temp;
+                         arr[i][j]=0;
+
+                        }
+
+                         temp=arr[i][j];
+
+                   }
+                   for(i=2;i>=0;i--)
+                   {
+                        k=i;
+                        while(CheckForZeroBeforeMove(k+1,j)&&(k+1)<=3)
+                        {
+                         arr[k+1][j]=arr[k][j];
+                         arr[k][j]=0;
+                         k++;
+                        }
+                   }
+
+              }
+
+         }
+            if(flag2==0 && arr[i][j]==2048)//If the slab already have a 2048, it would ask the user whether to continue or not.
+             {
+                 printf("\n\n\t\t\t\tYou have got a 2048 slab.Do you still want to continue");
+                 printf("\n\t\t\t\t\tPress 'y' to continue or 'n' to quit.");
+                 fflush(stdin);
+                 scanf("%c",&wannacontinue);
+             }
+
+             if(wannacontinue=='y' || wannacontinue=='Y')//On pressing y the program will continue executing.
+             {
+                 main();
+             }
+
+             else if(wannacontinue=='n' || wannacontinue=='N')//On pressing n the program will terminate.
+             {
+                 printf("\n\t\t\t\t\t\t\t\t\t\tFinal Score=%d",score2);
+                 exit(0);
+             }
      }
-        if(flag2==0 && arr[i][j]==2048)//If the slab already have a 2048, it would ask the user whether to continue or not.
-         {
-             printf("\n\n\t\t\t\tYou have got a 2048 slab.Do you still want to continue");
-             printf("\n\t\t\t\t\tPress 'y' to continue or 'n' to quit.");
-             fflush(stdin);
-             scanf("%c",&wannacontinue);
-         }
 
-         if(wannacontinue=='y' || wannacontinue=='Y')//On pressing y the program will continue executing.
-         {
-             main();
-         }
-
-         else if(wannacontinue=='n' || wannacontinue=='N')//On pressing n the program will terminate.
-         {
-             printf("\n\t\t\t\t\t\t\t\t\t\tFinal Score=%d",score2);
-             exit(0);
-         }
 
 }
 
