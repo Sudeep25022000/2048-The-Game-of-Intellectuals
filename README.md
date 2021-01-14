@@ -34,6 +34,6 @@ A submit of minor project to Codex(S'o'A University).
    ![Screenshot7](https://user-images.githubusercontent.com/53346605/62846526-76083b00-bcee-11e9-8d37-da4d3fb49b18.png)
    -Observe the upward movement.
    ![Screenshot8](https://user-images.githubusercontent.com/53346605/62846529-80c2d000-bcee-11e9-8459-ae3c3dcc8093.png)
-# Download (for both 32bits and 64bits)
+# Download the .exe (for both 32/64bits)
    -Choose the medium of download(developer's recommended .zip).
          - [Click Here to Download](https://github.com/Sudeep25022000/2048-The-Game-of-Intellectuals/releases)
