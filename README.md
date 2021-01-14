@@ -1,6 +1,6 @@
 ![1200x630wa](https://user-images.githubusercontent.com/53346605/63649166-e89a0180-c757-11e9-9cfa-be73d80e8a87.png)
 # 2048-The Game of Intellectuals.
-A contribution as minor project to Codex.
+Collect the best possible number of 2048 tiles.
  # Overview:
    - 2048 is a single-player sliding block puzzle game. The game's objective is to slide numbered tiles on a grid to combine them to create     a tile with the number 2048. However, one can continue to play the game after reaching the goal, creating tiles with larger numbers.
 # Rules:  
