@@ -1,6 +1,6 @@
 ![1200x630wa](https://user-images.githubusercontent.com/53346605/63649166-e89a0180-c757-11e9-9cfa-be73d80e8a87.png)
 # 2048-The Game of Intellectuals.
-A submit of minor project to Codex(S'o'A University).
+A contribution as minor project to Codex.
  # Overview:
    - 2048 is a single-player sliding block puzzle game. The game's objective is to slide numbered tiles on a grid to combine them to create     a tile with the number 2048. However, one can continue to play the game after reaching the goal, creating tiles with larger numbers.
 # Rules:  
@@ -13,10 +13,11 @@ A submit of minor project to Codex(S'o'A University).
    - The game is won when a tile with a value of 2048 appears on the board, hence the name of the game. After reaching the 2048 tile, players can continue to play (beyond the 2048 tile) to reach higher scores.
    - Once the board is full with no possible movement,user couldn't have any further proceedings.
 # Controls:
-   - 'A'   Left
-   - 'D'   Right
-   - 'S'   Down
    - 'W'   Up
+   - 'A'   Left
+   - 'S'   Down
+   - 'D'   Right
+
 # Screenshots:
    - Type 'S' for downward movent. 
    ![Screenshot1](https://user-images.githubusercontent.com/53346605/62846337-2f661100-bced-11e9-8865-5c183033bb1b.png)
